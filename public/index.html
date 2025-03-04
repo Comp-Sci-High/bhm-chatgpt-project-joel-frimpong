@@ -1,0 +1,70 @@
+<!--https://chatgpt.com/share/67c67629-5e74-800f-bdc5-d857f4ed7e1f-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miles Morales - Across the Spider-Verse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .web-top-left { top: 0; left: 0; background-image: url('https://static.thenounproject.com/png/52601-200.png'); }
+    .web-top-right { top: 0; right: 0; background-image: url('https://static.thenounproject.com/png/52601-200.png'); }
+    .web-bottom-left { bottom: 0; left: 0; background-image: url('https://static.thenounproject.com/png/52601-200.png'); }
+    .web-bottom-right { bottom: 0; right: 0; background-image: url('https://static.thenounproject.com/png/52601-200.png'); }
+</style>
+<script>
+    let index = 0;
+    function showNextSlide() {
+        const carousel = document.querySelector('.carousel');
+        const slides = document.querySelectorAll('.slide');
+        index = (index + 1) % slides.length;
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+    setInterval(showNextSlide, 3000);
+</script>
+</head>
+<body>
+<div class="spiderweb web-top-left"></div>
+<div class="spiderweb web-top-right"></div>
+<div class="spiderweb web-bottom-left"></div>
+<div class="spiderweb web-bottom-right"></div>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="https://www.marvel.com/characters/miles-morales-spider-man" target="_blank">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <img src="https://images.fineartamerica.com/images/artworkimages/medium/2/miles-morales-gedly-brise-transparent.png" alt="Miles Morales Logo" class="nav-logo">
+    <div class="social-icons">
+        <a href="https://twitter.com" target="_blank"><img src="https://loodibee.com/wp-content/uploads/Twitter-X-Logo.png" alt="Twitter"></a>
+        <a href="https://instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+        <a href="https://youtube.com" target="_blank"><img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png" alt="YouTube"></a>
+    </div>
+</nav>
+
+<section class="carousel-container">
+    <div class="carousel">
+        <div class="slide">
+            <p class="quote">“Anyone can wear the mask. You could wear the mask.”</p>
+            <img src="https://media4.giphy.com/media/0aIY8ZCncOtgh35ftC/giphy.gif?cid=6c09b952y9c170208iv234xmlpnztyfd38sofvu9kgrb9wgy&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g            " alt="Miles Morales GIF">
+        </div>
+        <div class="slide">
+            <p class="quote">“I’m Miles Morales. I’m Spider-Man.”</p>
+            <img src="https://media4.giphy.com/media/Y1L0dHsQrUpkv8Org7/giphy.gif?cid=6c09b952wsu0dt17l35unvh3nfsgxksa26euckcvzxx8ljpa&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="Miles Morales GIF">
+        </div>
+        <div class="slide">
+            <p class="quote">“You gotta believe in yourself.”</p>
+            <img src="https://wallpapers-clan.com/wp-content/uploads/2024/08/marvel-miles-morales-cityscape-gif-desktop-wallpaper-preview.gif" alt="Miles Morales GIF">
+        </div>
+    </div>
+</section>
+
+<section class="info" onclick="window.location.href='https://blacklivesmatter.com'" style="cursor: pointer;">
+    <h2>About Black Histoy & Spider-Man</h2>
+    <p>Black History matters in recognizing the struggles, accomplishments, and triumphs of Black individuals, diversifying and equalizing society. Miles Morales, as a Black and Puerto Rican Spider-Man, provides representation and role models for young Black individuals, providing them with a superhero who is representative of their own identities and struggles, highlighting the importance of diversity in media.</p>
+</section>
+</body>
+</html>
